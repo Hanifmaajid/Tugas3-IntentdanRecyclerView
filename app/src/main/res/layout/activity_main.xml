@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Toko Pak Lontong"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tv_namabarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerInParent="true"
+        android:text="Nama Barang :"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/et_namabarang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_namabarang"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:hint="Indomie"/>
+
+    <TextView
+        android:id="@+id/tv_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_namabarang"
+        android:layout_centerInParent="true"
+        android:text="Banyak Barang :"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/et_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_qty"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:hint="3 Dus"/>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_qty"
+        android:layout_centerInParent="true"
+        android:text="Tanggal:"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:inputType="number"
+        android:hint="25"/>
+
+    <Button
+        android:id="@+id/btn_inputdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_below="@+id/et_date"
+        android:layout_centerInParent="true"
+        android:text="Input Data"
+        android:textSize="6pt"
+        />
+    <Button
+        android:id="@+id/btn_detailbarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_below="@+id/btn_inputdata"
+        android:text="Detail Barang"
+        android:textSize="6pt"/>
+
+    <Button
+        android:id="@+id/btn_dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_below="@+id/btn_detailbarang"
+        android:text="Call Center"
+        android:textSize="6pt"/>
+</RelativeLayout>
